@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ══════════════════════════════════════════
+   DESIGN TOKENS — Palette Barberia
+   Usare queste variabili ovunque servano
+   valori dinamici (gradients, rgba, ecc.)
+══════════════════════════════════════════ */
+:root {
+  --clr-blue:       #00509D;   /* Blu profondo — decorativo */
+  --clr-blue-rgb:   0, 80, 157;
+  --clr-red:        #D62828;   /* Rosso deciso — CTA */
+  --clr-red-rgb:    214, 40, 40;
+  --clr-white:      #FFFFFF;
+  --clr-ink:        #0a0a0a;
+  --clr-ink-2:      #0d0d0e;
+}
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: auto; }
+
+  body {
+    background: var(--clr-ink);
+    color: var(--clr-white);
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  #root { width: 100%; }
+}
+
+@layer utilities {
+  .clip-reveal { overflow: hidden; }
+  .anim-fill   { animation-fill-mode: both; }
+}
+
+/* ── Scroll indicator ── */
+@keyframes lineAnim {
+  0%   { transform: scaleY(0); transform-origin: top; }
+  49%  { transform: scaleY(1); transform-origin: top; }
+  50%  { transform-origin: bottom; }
+  100% { transform: scaleY(0); transform-origin: bottom; }
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track  { background: var(--clr-ink); }
+::-webkit-scrollbar-thumb  { background: rgba(var(--clr-blue-rgb), .35); border-radius: 2px; }
