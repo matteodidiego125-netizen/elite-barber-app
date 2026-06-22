@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-const WA = 'https://wa.me/393518600258?text=Ciao!%20Vorrei%20prenotare%20un%20appuntamento.'
+const WA = 'https://tinyurl.com/barberiaelitePrenota'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
