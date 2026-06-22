@@ -12,9 +12,7 @@ import Location from './components/sections/Location'
 import { scrollState } from './store'
 
 gsap.registerPlugin(ScrollTrigger)
-
-const WA = 'https://wa.me/393518600258?text=Ciao!%20Vorrei%20prenotare%20un%20appuntamento.'
-
+ const WA = 'https://tinyurl.com/barberiaelitePrenota'
 /*
   ARCHITETTURA SCROLL:
   ─────────────────────────────────────────────────────────────────────
