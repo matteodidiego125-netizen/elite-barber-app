@@ -1,4 +1,4 @@
-const WA = 'https://wa.me/393518600258?text=Ciao!%20Vorrei%20prenotare%20un%20appuntamento%20da%20%C3%88lite%20Barberia.'
+const WA = 'https://tinyurl.com/barberiaelitePrenota'
 
 export default function Booking() {
   return (
